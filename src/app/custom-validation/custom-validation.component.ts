@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-custom-validation',
-  templateUrl: './custom-validation.component.html',
-  styleUrls: ['./custom-validation.component.css']
+  selector: "app-custom-validation",
+  templateUrl: "./custom-validation.component.html",
+  styleUrls: ["./custom-validation.component.css"]
 })
 export class CustomValidationComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  categories$
+  constructor() {}
+  
+  save(product) {
+    console.log(product);
   }
 
+  ngOnInit() {}
 }
